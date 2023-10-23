@@ -6,10 +6,35 @@
         <meta name="viewport" content="width=device-width">
 
         <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            article {
+                padding: 2% 0 0 0;
+            }
+
             img { 
-                display:block; 
-                max-width:100%; 
-                margin: 2% 0%;
+                display: block; 
+                max-width: min(15cm, 96%); 
+                margin: 0 2% 2% 2%;
+            }
+
+            footer {
+                padding: 0 2% 2% 2%;
+            }
+
+            p {
+                font-size: 150%;
+
+                /* 
+                    Cleaner wrapping
+                    https://stackoverflow.com/questions/18222409/specifying-a-preferred-line-break-point-in-html-text-in-a-responsive-design
+                */
+                display: inline-block;
+                white-space: nowrap;
+                margin: 0;
             }
 
             @media (prefers-color-scheme: dark) {
@@ -30,14 +55,22 @@
     </head>
 
     <body>
-        <img src="1.jpg" alt="Go to Kr. Barona 130 k-12">
-        <img src="2.jpg" alt="Approach from Zemitāna iela">
-        <img src="3.jpg" alt="Go through the arch">
-        <img src="4.jpg" alt="Look for &ldquo;Kishintai&rdquo; lightbox">
-        <img src="5.jpg" alt="Enter the building">
-        <img src="6.jpg" alt="Take stairs to the last floor and enter through the left red door">
-        <img src="7.jpg" alt="Walk through the right hallway">
-        <img src="8.jpg" alt="Find the brown door">
-        <img src="9.jpg" alt="Unless you hear loud gaming noises, please knock before entering">
+        <article>
+            <img src="1.jpg" alt="Go to Kr. Barona 130 k-12">
+            <img src="2.jpg" alt="Approach from Zemitāna iela">
+            <img src="3.jpg" alt="Go through the arch">
+            <img src="4.jpg" alt="Look for &ldquo;Kishintai&rdquo; lightbox">
+            <img src="5.jpg" alt="Enter the building">
+            <img src="6.jpg" alt="Take stairs to the last floor and enter through the left red door">
+            <img src="7.jpg" alt="Walk through the right hallway">
+            <img src="8.jpg" alt="Find the brown door">
+            <img src="9.jpg" alt="Unless you hear loud gaming noises, please knock before entering">
+        </article>
+
+        <footer>
+            <p>If you still can't find the club,&nbsp;</p>
+            <p>or the red door is closed,&nbsp;</p>
+            <p>call <a href="tel:+37126115112">+371 26115112</a><p>
+        </footer>
     </body>
 </html>

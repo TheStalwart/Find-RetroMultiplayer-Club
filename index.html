@@ -13,8 +13,17 @@
             }
 
             @media (prefers-color-scheme: dark) {
-                body {
-                    background-color: dimgray;
+                /*
+                    Color values based on Apple iOS defaults
+                    https://developer.apple.com/design/human-interface-guidelines/color#iOS-iPadOS-system-colors
+                */
+                html, body {
+                    color: white;
+                    background-color: rgb(58, 58, 60);
+                }
+
+                a:link, a:visited, a:hover, a:active {
+                    color: rgb(10, 132, 255);
                 }
             }
         </style>

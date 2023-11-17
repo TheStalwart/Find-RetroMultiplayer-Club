@@ -1,0 +1,7 @@
+# https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_resolving-git-line-ending-issues-in-containers-resulting-in-many-modified-files
+* text=auto eol=lf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
+# The file was created on Windows in CRLF format
+*.{html,[hH][tT][mM][lL]} text eol=crlf
